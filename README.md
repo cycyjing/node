@@ -1,6 +1,3 @@
-# node
-node demos 2019/08/09-2019/08/22
-
 # Node.js
 
 require(): 记得写后缀名
