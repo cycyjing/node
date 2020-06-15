@@ -48,6 +48,7 @@ app.post('/upload', (req, res) => {
   console.log('dirname---', __dirname)
   console.log('req.files---', req.files[0])
   fs.readFile(req.files[0].path, (err, data) => {
+    console.log('data :>> ', data)
     fs.writeFile(__dirname + '/' + req.files[0].originalname, data, (err) => {
       if (err) {
         console.log('error', err)
